@@ -1,0 +1,41 @@
+#contacto {
+    height: 400px;
+    right: auto;
+    z-index: 999;
+    background-color: #ffeef7;
+    color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+
+    h1 {
+        font-size: $valor-titulo;
+        font-family: $tipografia-titulo;
+    }
+}
+
+
+.form {
+    padding: 60px 60px;
+    margin:10px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+
+    .form-group {
+        padding: 15px 0px;
+    }
+
+}
+
+.btn-primary {
+    color: rgb(255, 255, 255);
+    background-color: #f09dab;
+    border-color: #f09dab;
+
+    &:hover {
+		background-color: rgb(97, 97, 97);
+	}
+}

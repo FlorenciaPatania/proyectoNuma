@@ -1,0 +1,35 @@
+
+#diseño {
+    width: auto;
+	height: $alto-div;
+    display: flex;
+    justify-content: center;
+}
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+	justify-content: center;
+    color:  rgb(97, 97, 97);
+
+
+    h2.card-title {
+    font-size: $valor-titulo;
+	font-family: $tipografia-titulo;
+    }
+
+	h5 {
+        font-size: ($valor-texto) +3px;
+		font-family: $tipografia-titulo;
+	}
+
+    p {
+        font-size: $valor-texto;
+        font-family: $tipografia-texto;
+        padding-left: 20px;
+        
+
+    }
+}

@@ -1,0 +1,100 @@
+@import 'reset';
+@import 'variables';
+@import 'intro';
+@import 'nosotros';
+@import 'productos';
+@import 'diseño';
+@import 'contacto';
+@import 'footer';
+
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+
+#carrousel {
+	padding: 20px;
+}
+
+//seccion productos
+#productos {
+	&:hover {
+		img {
+			transform: scale(0.9);
+			transition: 1.5s;
+		}
+	}
+}
+
+
+//mediaQueries
+
+
+@media screen and (min-width:720px) {
+	#nosotros {
+			height: $alto-div -150px;
+
+		.nosotros__intro p {
+			width: 380px;
+		}
+	}
+
+	
+	#lanzamientos {
+		height: 700px;
+		padding: 20px 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		justify-items: left;
+
+
+        h2 {
+			text-align: left;
+            justify-content: start;
+		}
+		p {
+			width: 400px;
+			height: auto;
+			display: flex;
+			text-align: left;
+		}
+	}
+
+    .row {
+        justify-content: space-evenly;
+    }
+
+	#diseño {
+		width: auto;
+		height: 700px;
+
+	}
+
+    .col-md-6 {
+        width: 400px;
+		height: auto;
+        display: flex;
+    	flex-direction: column;
+		justify-content: center;
+    	align-self: center;
+		text-align: left;
+
+	.col-md-6 img {
+			justify-content: center;
+	
+		}
+   
+	}
+
+
+    .footer__iconos {
+        flex-direction: row;
+    }
+
+    .form {
+        padding: 50px 50px;
+        margin:20px 20px;
+    }
+}

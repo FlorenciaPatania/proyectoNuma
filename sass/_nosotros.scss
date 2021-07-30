@@ -1,0 +1,38 @@
+#nosotros {
+	height: 600px;
+	width: 100%;
+	background-color: #ffeef7;
+	color:  rgb(97, 97, 97);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	h2.nosotros__subtitulo {
+            padding-bottom: 20px;
+		    text-align: center;
+		    font-family: $tipografia-titulo;
+            font-size: $valor-titulo;
+	}
+    
+    .nosotros__intro {
+		p {
+			width: $ancho-div;
+			text-align: center;
+            font-family: $tipografia-texto;
+            font-size: $valor-texto;
+
+		}
+
+		strong {
+			display: flex;
+			justify-content: center;
+			font-family: $tipografia-titulo;
+            font-size: $valor-texto+1px;
+			padding-bottom: 10px;
+		}
+	}
+
+}

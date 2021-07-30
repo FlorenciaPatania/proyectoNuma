@@ -1,0 +1,42 @@
+#lanzamientos {
+	height: $alto-div;
+	width: 100%;
+	background-color: #ffeef7;
+	color:  rgb(97, 97, 97);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+
+	div {
+		img {
+			display: flex;
+			justify-items: center;
+			transition: 2s;
+		}
+	}
+	&:hover {
+		img {
+			transform: scale(0.9);
+		}
+	}
+	h2 {
+		padding-bottom: 20px;
+		font-family: $tipografia-titulo;
+		font-size: $valor-titulo;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+	}
+	p {
+		width: $ancho-div;
+		height: auto;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: $tipografia-texto;
+		font-size: $valor-texto;
+	}
+
+}
