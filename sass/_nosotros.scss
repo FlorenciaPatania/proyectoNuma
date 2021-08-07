@@ -1,14 +1,17 @@
 #nosotros {
-	height: 600px;
-	width: 100%;
-	background-color: #ffeef7;
-	color:  rgb(97, 97, 97);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
+
+	.div {
+		height: 600px;
+		width: auto;
+		background-color: #ffeef7;
+		color:  rgb(97, 97, 97);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-wrap: wrap;
+}
 
 	h2.nosotros__subtitulo {
             padding-bottom: 20px;
