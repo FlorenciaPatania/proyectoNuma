@@ -1,6 +1,4 @@
 #nosotros {
-
-	.div {
 		height: 600px;
 		width: auto;
 		background-color: #ffeef7;
@@ -10,17 +8,28 @@
 		align-items: center;
 		align-content: center;
 		justify-content: center;
-		flex-wrap: wrap;
-}
 
 	h2.nosotros__subtitulo {
-            padding-bottom: 20px;
+            padding-bottom: 5px;
 		    text-align: center;
 		    font-family: $tipografia-titulo;
             font-size: $valor-titulo;
-	}
+
+		}
     
     .nosotros__intro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		div.separator {
+			width: 100px;
+			height: 1px;
+			background: #688073;
+			margin: 25px 0px;
+			
+			}
+			
 		p {
 			width: $ancho-div;
 			text-align: center;
@@ -32,10 +41,140 @@
 		strong {
 			display: flex;
 			justify-content: center;
-			font-family: $tipografia-titulo;
-            font-size: $valor-texto+1px;
-			padding-bottom: 10px;
+			font-family: $tipografia-texto;
+            font-size: $valor-texto;
+			padding-bottom: 50px;
 		}
+		
+
+} 	
+
+	.nosotros__button a {
+		text-decoration-line:none;
+		width: 100px;
+		height: 30px; 
+		font-size: $valor-texto;
+		font-family: $tipografia-texto;
+		background-color: rgb(97, 97, 97);
+		color: #ffeef7;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	} 
+
+	 a {
+		&:hover {
+			background-color:#e7dcdc;
+			color:rgb(97, 97, 97);
+			}  
+		}  
+}
+
+
+//seccion html nosotros 
+
+#nosotros-html {
+	height: $alto-div;
+    right: auto;
+    z-index: 999;
+    background-color: #ffeef7;
+    color: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    h2 {
+        font-size: $valor-titulo;
+        font-family: $tipografia-titulo;
+    }
+}
+
+.nosotros-html__texto {
+	height: 500px;
+	width: 100%;
+	background-color: #f8f9fa;
+	color:  rgb(97, 97, 97);
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: space-evenly;
+	align-items: center;
+
+	.nosotros-html__texto1 {
+
+		h4 {
+			padding: 10px 0px;
+			font-family: $tipografia-titulo;
+		}
+	
 	}
 
+		div.separator {
+			width: 100px;
+			height: 1px;
+			background: #688073;
+			margin: 20px 0px;
+			}
+	
+		p {
+			width: 250px;
+			text-align: left;
+			font-family: $tipografia-texto;
+			font-size: $valor-texto;
+			padding-bottom: 10px;
+			justify-content: right;
+
+		}
+	
 }
+
+//seccion video
+
+
+.video {
+	height: $alto-div;
+	width: 100%;
+	background-color: rgb(231, 220, 220);
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+	align-items: center;
+
+	.video__home {
+		height: 400px;
+		width: auto;
+		border-radius: 8px;
+		display: block;
+		box-shadow: 0px 0px 40px -17px black;
+		align-items: center;
+		font-family: $tipografia-titulo;
+		font-size: $valor-titulo;
+		}
+
+
+	div.video__subtitulo1 {
+		font-family: $tipografia-titulo;
+		font-size: $valor-titulo;
+		padding-top: 40px;
+		color:  rgb(97, 97, 97);
+		
+	
+		div.separator {
+				width: 100px;
+				height: 1px;
+				background: #688073;
+				margin-top: 20px;
+			}
+		}
+		
+	div.video__subtitulo2 {
+		font-family: $tipografia-texto;
+		font-size: $valor-texto;
+		color:  rgb(97, 97, 97);
+		}
+
+	  
+}
+

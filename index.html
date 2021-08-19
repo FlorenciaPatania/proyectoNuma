@@ -10,15 +10,14 @@
    
     <meta name="keywords" content=" diseño grafico, estampas, diseño, ilustraciones, pañuelos, textiles, papeleria">
 
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-
-    <link href = "https: //fonts.googleapis.com/css2? family = Castoro & family = Roboto: wght @ 300 & display = swap "rel =" stylesheet ">
- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,23 +30,23 @@
         <div class="row no-gutters">
             <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href=""><img src="img/logo.png" alt="logo" width="120px" height="auto"></a>
+                  <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo" width="120px" height="auto"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#productos">Productos</a>
+                        <a class="nav-link" href="Productos.html">Productos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#diseño">Diseño</a>
+                        <a class="nav-link" href="Diseño.html">Diseño</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="Contacto.html">Contacto</a>
@@ -63,10 +62,12 @@
     <main>
 
       <section id="intro">
-          <h1 class="intro__titulo">Diseño textil & papelería</h1>
-             <div class="intro_button">
+        <div class="intro__container">
+          <h1 class="intro__titulo wow animate__animated animate__flipInX" data-wow-delay= "0.3s"> Diseño textil & papelería</h1>
+             <div class="intro_button intro__titulo wow animate__animated animate__flipInX" data-wow-delay= "0.6s">
                 <a href="#productos">Ver productos</a>
             </div>
+          </div>
       </section>
 
       <section id="carrousel">
@@ -74,10 +75,10 @@
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner" >
               <div class="carousel-item active">
-                <img src="./img/banner1-coder.jpg" class="d-block w-100" alt="accesorios" >
+                <img src="./img/banner1-coder.jpg" class="d-block w-100 rounded" alt="accesorios" >
               </div>
               <div class="carousel-item">
-                <img src="./img/banner2-coder.jpg" class="d-block w-100" alt="pañuelos">
+                <img src="./img/banner2-coder.jpg" class="d-block w-100 rounded" alt="pañuelos">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -93,21 +94,27 @@
       </section>
 
         <section id="nosotros">
-           <div class="animate__animated animate__backInRight animation"> 
-               <h2 class="nosotros__subtitulo"> Sobre nosotros </h2>
-               <div class="nosotros__intro">
+           <div> 
+              <h2 class="nosotros__subtitulo wow animate__animated animate__flipInX" data-wow-delay= "0.5s"> Sobre nosotros </h2>
+              <div class="nosotros__intro wow animate__animated animate__backInRight" data-wow-delay = "1s">
+                  <div class="separator"></div>
                   <p> Numa es un emprendimiento dedicado al diseño, donde creamos productos y estampas únicas tanto para textiles como para papelería, con la idea de podér explorar y jugar en el universo creativo...</p> 
                   <strong> ¡Te invitamos a descubrirlo!</strong>
-               </div>
+
+                  <div class="nosotros__button">
+                    <a href="Nosotros.html">Ver más</a>
+                  </div>
+
+              </div>
           </div>
         </section> 
 
       <div> 
         <section id="productos">
-        <div class="row row-cols-1 row-cols-md-2 m-2 p-5 g-4" >
+        <div class="row row-cols-1 row-cols-md-3 m-2 p-5 g-4" >
           <div class="col p-4">
             <div class="card">
-              <img src="./img/image00001.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="..." >
+              <a title="Productos" href="Productos.html"><img src="./img/image00001.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="Porta pasaportes" /></a>
               <div class="card-body">
                 <h5 class="card-title">Porta pasaportes</h5>
                 <p class="card-text"> ¿Estás planeando tu próximo viaje? Protegé y dale onda a tu pasaporte con nuestros diseños.</p>
@@ -116,71 +123,50 @@
           </div>
           <div class="col p-4">
             <div class="card">
-              <img src="./img/image00002.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="...">
+              <a title="Productos" href="Productos.html"><img src="./img/image00002.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="Sobres" /></a>
               <div class="card-body">
                 <h5 class="card-title"> Sobres</h5>
-                <p class="card-text">Podés utilizarlos como neceser, cartuchera o porta docuemntos. ¿Vos que uso le darías?</p>
+                <p class="card-text">Podés utilizarlos como neceser, cartuchera o porta documentos. ¿Vos que uso le darías?</p>
               </div>
             </div>
           </div>
           <div class="col p-4">
             <div class="card">
-              <img src="./img/image00016.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="...">
+              <a title="Productos" href="Productos.html"><img src="./img/image00016.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="Cuadernos" /></a>
               <div class="card-body">
                 <h5 class="card-title">Cuadernos</h5>
-                <p class="card-text"> Encontralos con hojas rayadas o lisas, según el uso que más prefieras.</p>
+                <p class="card-text"> Encontralos con hojas rayadas o lisas, para usar en la facu, para dibujar o como travel book.</p>
               </div>
             </div>
           </div>
-          <div class="col p-4">
-            <div class="card">
-              <img src="./img/pañuelo2.jpeg" class="card-img-top img-fluid img-thumbnail rounded" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Pañuelos</h5>
-                <p class="card-text"> Un plus que le da color a tu look, para usar en todo momento. ¡Conocé nuestras estampas!</p>
-              </div>
-            </div>
-          </div>
+        
         </div>
         </section> 
-        <section id="lanzamientos">
-          <div class="animate__animated animate__backInRight animation">
-              <h2>Nuevo lanzamiento</h2>
-              <p> En Numa desarrollamos estampas propias para utilizar en textiles y papelería. Teniendo como inspiración la ilustración, los viajes y la naturaleza, lanzamos nuestra cápsula de PAÑUELOS.</p>
-          </div>
 
-           <div class="shadow-sm p-3 mb-5 bg-body rounded"><img src="img/pañuelo1.jpeg" width="auto" height="450" alt=""> </div>
+      <section id="lanzamientos">
+          <div id="texto" >
+              <h2 class= "nosotros__subtitulo wow animate__animated animate__flipInX" data-wow-delay= "0.3s">Nuevo lanzamiento</h2>
 
-          </section>
-    </div>
+              <div class="wow animate__animated animate__backInRight animation" data-wow-delay = "0.8s">
+                  <div class="separator"></div>
 
-
-    <div class="card mb-6 m-4 p-4" id="diseño" style="max-width: full">
-        <div class="row no-gutters">
-          <div class="col-md-6 mx:auto">
-            <img src="./img/diseño-textil.jpg" width="auto" height="400" class="img-fluid img-thumbnail rounded" alt="...">
-          </div>
-
-          <div class="col-md-6">
-            <div class="card-body">
-              <h2 class="card-title">Diseño textil</h2>
-              <h5>¡Trabajamos en conjunto los diseños para tu proyecto!</h5>
+                  <p> Teniendo como inspiración la ilustración y la naturaleza, lanzamos nuestra cápsula de PAÑUELOS, un plus que le da color a tu look para usar en todo momento. ¡Conocé nuestras estampas!</p>
+            </div>
+         
             </div>
 
-            <div class="animate__animated animate__backInRight animation"> 
-                 <p class="card-text"> Nos envias tus ideas y te mandamos un boceto para que veas el proceso, hasta lograr el rapport final para usar en textiles o papelería.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
+          <div class="shadow-sm p-3 mb-5 bg-body rounded"><img src="img/pañuelo1.jpeg" width="auto" height="380" alt="lanzamiento"> </div>
+          
+      </section>
 
       </main>
 
       <footer id="footer">
-    
-        <h3 class="footer__redes"> Follow us </h3>
-
+        <div class="footer__redes">
+        <div class=" wow animate__animated animate__flipInX" data-wow-delay= "0.5s"> 
+          <h3 class="footer__redes"> Follow us </h3>
+        </div>
+  
         <nav>
              <ul class="footer__iconos">
                  <li> 
@@ -196,9 +182,22 @@
                 </li>
               </ul>
         </nav>
+
+      </div>
+
+        <div class="footer__website">
+          <p> Desarrollo web l Florencia Patania</p>
+        </div>
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> 
+       new WOW().init(); 
+    </script>
+
 </body>
 </html>

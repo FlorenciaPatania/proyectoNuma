@@ -14,7 +14,17 @@
 
 
 #carrousel {
-	padding: 20px;
+	height: 200px;
+    display: flex;
+    align-items: center;
+	transition: transform 0.3s ease;
+}
+
+.separator {
+	width: 100px;
+	height: 1px;
+	background: #688073;
+	margin-bottom: 20px;
 }
 
 //seccion productos
@@ -32,6 +42,16 @@
 
 
 @media screen and (min-width:720px) {
+
+	h1.intro__titulo  {
+		width: auto;
+	}
+
+	#carrousel {
+		height: 500px;
+		padding: 20px;
+	}
+
 	#nosotros {
 			height: $alto-div -150px;
 
@@ -47,24 +67,76 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		justify-items: left;
 
+		#texto {
+			align-items: flex-start;
 
-        h2 {
-			text-align: left;
-            justify-content: start;
-		}
-		p {
-			width: 400px;
-			height: auto;
-			display: flex;
-			text-align: left;
+				h2 {
+					text-align: left;
+					justify-content: start;
+				}
+				p {
+					width: 300px;
+					height: auto;
+					display: flex;
+					text-align: left;
+				}
+		
+			}
+	}
+
+	.gridGaleria {
+		grid-template-columns: repeat(3, 1fr);
+		grid-auto-rows: 450px;
+		padding: 50px 80px;
+
+		.select2{
+			grid-row: 1 / 1;
 		}
 	}
 
-    .row {
+
+	.nosotros-html__texto {
+		flex-direction: row;
+
+		.nosotros-html__texto2 {
+			padding-top: 45px;
+		}
+	}
+
+	.video {
+		display: flex;
+		flex-direction: row;
+	
+
+		div.video__subtitulo1 {
+			padding-bottom: 300px
+		}
+		
+		div.video__subtitulo2 {
+			padding-top: 300px
+
+		}
+	} 
+
+	#productos-texto {
+		height: 700px;
+		flex-direction: row;
+		justify-content: space-between;
+
+
+		#productos-texto__conjunto{
+			padding-right: 170px;	
+			padding-top: 0px;
+
+		}
+
+	}
+
+    #diseño .row {
         justify-content: space-evenly;
     }
+
 
 	#diseño {
 		width: auto;
@@ -89,12 +161,37 @@
 	}
 
 
+	#diseñoTextil {
+		height: 800px;
+		padding: 20px 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+
+		#diseñoTextil__texto {
+			align-items: flex-start;
+
+				h2, h6  {
+					text-align: left;
+					justify-content: start;
+				}
+				p {
+					width: 300px;
+					height: auto;
+					display: flex;
+					text-align: left;
+				}
+		
+			}
+	}
+
+
     .footer__iconos {
         flex-direction: row;
     }
 
     .form {
-        padding: 50px 50px;
+        padding: 100px 100px;
         margin:20px 20px;
     }
 }

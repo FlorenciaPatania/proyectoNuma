@@ -10,8 +10,129 @@
    
     <meta name="keywords" content=" diseño grafico, estampas, diseño, ilustraciones, pañuelos, textiles, papeleria">
     
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header>
+
+        <div class="container-fluid">
+        <div class="row no-gutters">
+            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="120px" height="auto"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Diseño.html">Diseño</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <section id="productos-grid" class="wow animate__animated animate__fadeInDownBig"> 
+        <h2 class="productos-grid__titulo wow animate__animated animate__flipInX" data-wow-delay= "1s"> Productos</h2>
+    </section>
     
+    <div id="productos-texto">
+
+      <div class="productos-texto__imagen"> </div>
+
+      <div id="productos-texto__conjunto" class="wow animate__animated animate__backInRight animation" data-wow-delay = "0.5s">
+          <h4> ¿Qué hacemos?</h4>
+
+          <div class="separator"></div>
+
+          <p>Numa es un emprendimiento dedicado al diseño, donde creamos estampas únicas tanto para textiles como para papelería. Partimos desde la inspiracion de la naturaleza, los viajes y el arte, para crear diversos productos de diseño.</p>
+        
+          <div class="productos-texto__subtitulo" > 
+                <p>¡Descubrilos!</p>
+          </div>
+        
+          <div class="productos-texto__button">
+              <a href="#galeriaFotos"> Ver más</a>
+          </div>
+    </div>
+  </div>
+
+    <div class="gridGaleria" id="galeriaFotos">
+        <div class="gridGaleria__fotos select2"> <img src="img/grid6.jpeg" alt=""> </div>
+        <div class="gridGaleria__fotos"> <img src="img/grid8.jpeg"  alt=""> </div>
+        <div class="gridGaleria__fotos"> <img src="img/3.jpeg" alt=""> </div>
+        <div class="gridGaleria__fotos select" > <img src="img/4.jpeg"  alt=""> </div>
+        <div class="gridGaleria__fotos" > <img src="img/pañuelo3.jpeg" alt=""> </div>
+        <div class="gridGaleria__fotos" > <img src="img/pañuelo1.jpeg" alt=""> </div>
+        <div class="gridGaleria__fotos" > <img src="img/grid9.jpeg"  alt=""> </div>
+        <div class="gridGaleria__fotos" > <img src="img/grid7.jpeg" alt=""> </div>
+    </div>
+
+    
+    <footer id="footer">
+      <div class="footer__redes">
+      <div class=" wow animate__animated animate__flipInX" data-wow-delay= "0.5s"> 
+        <h3 class="footer__redes"> Follow us </h3>
+      </div>
+
+      <nav>
+           <ul class="footer__iconos">
+               <li> 
+                   <a href="https://www.instagram.com/tienda.numa/?hl=es-la" target="blank"><img src="./iconos/instagramb.png" id="ig" alt="ig" width="80px" height="auto"></a>
+              </li>
+
+               <li> 
+                   <a href="https://wa.link/mtnr1i" target="blank"><img src="./iconos/whatsappb.png" alt="" width="80px" height="auto"></a>
+              </li>
+
+               <li> 
+                   <a href="mailto:consultas.numa@gmail.com"><img src="./iconos/mailb.png" alt="" width="80px" height="auto"></a>
+              </li>
+            </ul>
+      </nav>
+
+    </div>
+
+      <div class="footer__website">
+        <p> Desarrollo web l Florencia Patania</p>
+      </div>
+      
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+   <script> 
+       new WOW().init(); 
+  </script>
+
 </body>
 </html>

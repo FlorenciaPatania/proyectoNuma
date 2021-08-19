@@ -1,6 +1,8 @@
 
+//seccion home
+
 #diseño {
-    width: 100vh ;
+    width: auto;
 	height: $alto-div;
     display: flex;
     justify-content: center;
@@ -32,4 +34,104 @@
         
 
     }
+}
+
+//seccion html diseño textil
+
+#diseño-html {
+    height: $alto-div;
+    width: auto;
+    background-color: #ffeef7;
+    color:  rgb(97, 97, 97);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+    .diseño-html__titulo {
+        padding-bottom: 5px;
+        text-align: center;
+        font-family: $tipografia-titulo;
+        font-size: $valor-titulo;
+
+    }
+} 
+
+#diseñoTextil {
+	height: $alto-div +200px;
+	width: 100%;
+	background-color: rgb(231, 220, 220);
+	color:  rgb(97, 97, 97);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	
+	#diseñoTextil__texto {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+
+		h2 {
+			padding-bottom: 20px;
+			font-family: $tipografia-titulo;
+			font-size: $valor-titulo;
+		}
+
+        h6 {
+            width: 250px;
+			height: 50px;
+            font-family: $tipografia-texto;
+            text-align: center;
+        }
+
+		p {
+			width: 250px;
+			height: auto;
+			text-align: center;
+			font-family: $tipografia-texto;
+			font-size: $valor-texto;
+            padding-bottom: 10px;
+		
+        }
+
+        .diseñoTextil__button a {
+            text-decoration-line:none;
+            color:white;
+            width: 100px;
+            height: 30px; 
+            font-size: $valor-texto;
+            font-family: $tipografia-texto;
+            background-color: rgb(97, 97, 97);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+    
+         a {
+            &:hover {
+                background-color: #f09dab;
+                }  
+            }   
+          
+} 
+	
+	div {
+		img {
+			display: flex;
+			justify-items: center;
+			transition: 2s;
+		}
+	}
+	
+	&:hover {
+		img {
+			transform: scale(0.95);
+		}
+	}
 }

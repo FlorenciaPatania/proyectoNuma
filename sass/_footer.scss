@@ -1,15 +1,14 @@
 
 footer {
-	height: 300px;
-	width: auto;
+	height: 380px;
+	width: 100%;
 	background: rgb(131, 131, 131);
 	color: rgb(255, 255, 255);
 	position: relative;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 50px 70px;
 }
     .footer__iconos {
         display: flex;
@@ -17,18 +16,35 @@ footer {
         justify-content: center;
         align-items: center;
         flex-wrap: nowrap;
+        padding: 0px;
+        
+    &:hover {
+		img {
+			transform: scale(0.8);
+		}
+	  }
     }
-        #ig {
-            &:hover {
-                color: #f09dab;
-            }
-        }
+
+
     #footer {
         h3 {
+            display: flex;
+            justify-content: center;
             font-family: $tipografia-titulo;
             font-size: 20px;
+
             &:hover {
-                color: #f09dab;
+                color: #ffeef7;
             }
+        }
+
+        .footer__website {
+            height: auto;
+            width: 200px;
+            color: white;
+            font-size: 12px;
+            font-family: $tipografia-texto;
+            text-align: center;
+        
         }
 }

@@ -1,5 +1,5 @@
 #contacto {
-    height: 400px;
+    height: $alto-div;
     right: auto;
     z-index: 999;
     background-color: #ffeef7;
@@ -9,9 +9,7 @@
     align-items: center;
     align-content: center;
     
-
-
-    h1 {
+    h2 {
         font-size: $valor-titulo;
         font-family: $tipografia-titulo;
     }
@@ -20,14 +18,23 @@
 
 .form {
     padding: 60px 60px;
-    margin:10px 10px;
+    margin:20px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
 
     .form-group {
-        padding: 15px 0px;
+        padding: 1px 0px;
     }
 
+}
+.textarea.mensaje#mensaje{
+    resize: vertical;
+    overflow: auto;
+   
+}
+
+.form button, input, optgroup, select, textarea {
+    width: 100%;
 }
 
 .btn-primary {
