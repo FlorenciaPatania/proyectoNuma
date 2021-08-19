@@ -68,34 +68,41 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+    
 	
 	#diseñoTextil__texto {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-content: center;
-		align-items: center;
+        align-items: flex-start;
+        padding-left: 50px;
 
 		h2 {
 			padding-bottom: 20px;
 			font-family: $tipografia-titulo;
 			font-size: $valor-titulo;
+            display: flex;
+            text-align: left;
+			
 		}
 
         h6 {
             width: 250px;
 			height: 50px;
             font-family: $tipografia-texto;
-            text-align: center;
+            display: flex;
+            text-align: left;
+    
         }
 
 		p {
-			width: 250px;
+			width: 220px;
 			height: auto;
-			text-align: center;
 			font-family: $tipografia-texto;
 			font-size: $valor-texto;
             padding-bottom: 10px;
+            display: flex;
+			text-align: left;
 		
         }
 
@@ -109,8 +116,9 @@
             background-color: rgb(97, 97, 97);
             border-radius: 5px;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+
         } 
     
          a {

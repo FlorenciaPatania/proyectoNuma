@@ -26,7 +26,7 @@
 	#texto {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: left;
 		align-content: center;
 		align-items: center;
 
@@ -35,6 +35,8 @@
 			padding-bottom: 20px;
 			font-family: $tipografia-titulo;
 			font-size: $valor-titulo;
+			text-align: left;
+			align-content: left;
 		}
 
 		.separator {
@@ -42,12 +44,13 @@
 			height: 1px;
 			background: #688073;
 			margin-bottom: 20px;
+
 		}
 
 		p {
 			width: $ancho-div;
 			height: auto;
-			text-align: center;
+			text-align: left;
 			font-family: $tipografia-texto;
 			font-size: $valor-texto;
 		}
