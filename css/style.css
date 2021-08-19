@@ -375,20 +375,6 @@
   font-size: 14px;
 }
 
-#lanzamientos div img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-items: center;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-#lanzamientos:hover img {
-  -webkit-transform: scale(0.95);
-          transform: scale(0.95);
-}
-
 #productos-grid {
   height: 700px;
   width: 100%;
@@ -435,6 +421,8 @@
 
 #productos-texto .productos-texto__imagen img {
   border-radius: 4%;
+  -webkit-box-shadow: 0px 0px 40px -17px #494848;
+          box-shadow: 0px 0px 40px -17px #494848;
 }
 
 #productos-texto #productos-texto__conjunto {
